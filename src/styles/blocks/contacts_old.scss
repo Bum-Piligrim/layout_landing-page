@@ -1,0 +1,191 @@
+.contacts {
+  &__container {
+    @include page-grid;
+
+    row-gap: 48px;
+  }
+
+  // перший блок контактів
+  &__block:first-child {
+    grid-column: span 2; // мобільна: займає обидві колонки
+
+    @include on-tablet {
+      grid-column: 1 / span 3; // планшет: перші 3 з 6 колонок
+      grid-row: 1;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / span 3; // десктоп: перші 3 з 12 колонок
+      grid-row: 1;
+    }
+  }
+
+  // форма
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Центрує всі вкладені елементи по горизонталі
+    gap: 16px;
+    width: 100%;
+    max-width: 280px; // Базова ширина для мобільних
+    margin: 0 auto;
+
+    grid-column: span 2; // мобільна: займає обидві колонки
+
+    @include on-tablet {
+      grid-column: 4 / span 3; // планшет: останні 3 з 6 колонок
+      grid-row: 1 / span 2; // розтягується на два рядки
+    }
+
+    @include on-desktop {
+      grid-column: 8 / span 5; // десктоп: останні 5 з 12 колонок
+      grid-row: 1;
+    }
+
+    &--input,
+    &--message {
+      width: 100%; // Всі елементи розтягуються на всю ширину форми
+      max-width: 280px;
+      box-sizing: border-box; // Щоб padding не збільшував ширину
+      background: $text-area-color;
+      border: none;
+
+      @include on-tablet {
+        max-width: 288px;
+      }
+
+      @include on-desktop {
+        max-width: 411px;
+      }
+    }
+
+    &--input {
+      height: 48px;
+    }
+
+    &--message {
+      height: 144px;
+      resize: none; // щоб textarea не розтягувалась вручну
+    }
+
+    &--text,
+    &--text-1 {
+      font-family: Cinzel, serif !important;
+      font-weight: 400;
+      font-style: normal; // замість "Regular"
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 12px;
+      display: block;
+      box-sizing: border-box;
+      color: $main-text-color; // колір введеного тексту
+
+      &::placeholder {
+        color: $input-text-color-placeholder;
+        opacity: 1;
+        transition: color 0.3s ease;
+      }
+
+      &:focus::placeholder {
+        color: $main-text-color;
+      }
+    }
+  }
+
+  // другий блок контактів
+  &__block:nth-of-type(2) {
+    grid-column: span 2; // мобільна: займає обидві колонки
+
+    @include on-tablet {
+      grid-column: 1 / span 3; // планшет: перші 3 з 6 колонок
+      grid-row: 2; // під першим блоком
+    }
+
+    @include on-desktop {
+      grid-column: 4 / span 3; // десктоп: середні 4 з 12 колонок
+      grid-row: 1;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    &-contact-title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 27px;
+      color: $main-text-color;
+    }
+
+    &-ph-a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 27px;
+      color: $main-text-color;
+      margin: 0;
+    }
+
+    &-link {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 27px;
+      color: $contacts-link-text-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    background-color: $red-text-color;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    max-width: 280px;
+    margin: 32px auto 0;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+
+    &:active {
+      background-color: $button-active-color;
+      transform: scale(0.96); // Ефект "продавлювання" (зменшення)
+    }
+
+    @include on-tablet {
+      max-width: 288px;
+    }
+
+    @include on-desktop {
+      max-width: 411px;
+    }
+
+    &--title {
+      font-family: Cinzel, Times, sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      color: $menu-text-color;
+      text-decoration: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      line-height: normal; // важливо
+      margin: 0; // прибрати зайві відступи
+      padding: 0;
+      text-transform: uppercase; // щоб було як у макеті
+    }
+  }
+}

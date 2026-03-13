@@ -1,2 +1,7 @@
 /backstop_data/
 /dist
+
+# Ігнорувати конкретні файли
+src/styles/blocks/now-on-view_old.scss
+src/styles/blocks/now-on-views_old_1.scss
+src/styles/blocks/contacts_old.scss
