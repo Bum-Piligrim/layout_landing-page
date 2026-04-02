@@ -27,7 +27,7 @@
       href="./src/styles/style.scss"
     />
     <script
-      src="./src/styles/style.scss"
+      src="./src/styles/main.js"
       defer
     ></script>
   </head>
@@ -42,7 +42,7 @@
                 <!-- для планшета і більше -->
                 <source media="(min-width: 576px)" srcset="src/images/the-met-tablet.png">
                 <!-- для мобільних -->
-                <img src="src/images/the-met-mobile.png" alt="The Met logo">
+                <img src="./src/images/the-met-mobile.png" alt="The Met logo">
               </picture>
             </a>
             <div class="top-bar__icons">
@@ -391,7 +391,7 @@
                 </p>
               </div>
 
-              <form class="contacts__form" onsubmit="this.reset(); return false;">
+              <form class="contacts__form" onsubmit="this.reset(); return false;"> <!-- спосіб зробити форму "заглушкою" під час верстки. Він дозволяє імітувати роботу форми без реального відправлення даних на сервер -->
                 <input
                   class="contacts__form--input contacts__form--text"
                   type="text"

@@ -41,12 +41,6 @@
   }
 
   &__week {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: flex-start;
-    // margin-bottom: 16px;
-    // display: flex;
-
     display: grid;
     grid-template-columns: max-content 1fr; // Перша колонка по ширині тексту, друга — все інше
     gap: 15px;

@@ -1,5 +1,5 @@
 .page:has(.page__menu:target) {
-  overflow: hidden; /* not to scroll the page (блокує прокрутку сторінки під меню)  */
+  overflow: hidden; // заблокує прокрутку сторінки під меню
 }
 
 .menu {
@@ -9,18 +9,23 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  // Додаємо можливість скролу всередині самого меню
+  @include on-desktop {
+    max-width: 1260px;
+    margin: auto;
+  }
+
+  // можливість скролу всередині самого меню
   overflow-y: auto;
 
   &__top {
     margin-bottom: 40px;
 
-    // Фіксуємо верхню частину (з хрестиком) при скролі
+    // фіксуємо верхню частину (з хрестиком) при скролі
     position: sticky;
     top: 0;
     z-index: 1;
 
-    // Важливо: колір фону має збігатися з меню, щоб текст під ним не просвічувався
+    // колір фону має збігатися з меню, щоб текст під ним не просвічувався
     background-color: $red-text-color;
   }
 
