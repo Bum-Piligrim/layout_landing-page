@@ -26,10 +26,14 @@
 
 .container {
   @include content-padding-inline;
+
+  &--wide {
+    max-width: 100%;
+  }
 }
 
-@mixin hover($property, $toValue) {
-  transition: #{property} 0.3s;
+@mixin hover($property, $toValue, $ease: ease-in-out) {
+  transition: #{$property} 0.3s #{$ease};
   &:hover {
     #{$property}: $toValue;
   }
