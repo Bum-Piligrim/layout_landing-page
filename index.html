@@ -1,0 +1,441 @@
+<!-- #region head-->
+<!doctype html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>The Met</title>
+    <link rel="icon" href="/layout_landing-page/assets/the-met-favicon-eEj7jXGp.png"
+      type="image/png">
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="./src/styles/main.js"
+      defer
+    ></script>
+    <link rel="stylesheet" crossorigin href="/layout_landing-page/assets/index-BzWyP721.css">
+  </head>
+  <!-- #endregion-->
+  <body class="page__body" id="top">
+    <header class="header">
+      <div class="container container--wide">
+        <div class="header__content">
+          <div class="top-bar">
+            <a href="#top" class="top-bar__logo">
+              <picture>
+                <!-- для планшета і більше -->
+                <source media="(min-width: 576px)" srcset="data:image/png;base64,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">
+                <!-- для мобільних -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAuCAYAAACYlx/0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARqSURBVHgB7ZrhddowEICPvP4PmaDOBKET1COQCUImCJ0AmIBkAsgESSbAmSB0AjsTmE6g6uITiOMk2Uakec/93hPG0uksnWTpJKsHhFIq15e1Dr+hHec69HVIdJjpMKB7iY0Oz71er7AjdRlSfUnBzUc++j/06HdxpcOrfu79QYrakeuwYqFU+5SCTG7yk75Ehzd1yNRXQsqX18mn4+4FuZLy8+B/PiUOHWkr9pCFQ25sDED3I6GAAwjgyNcX5PqC3MihM6F6TO34M+v/UneNZzgC6lovAbES2une1Inz5C/05Rqq12iLbYBXiEMGXxQyWGHH2QY4qvUtMvjC8F5+ZiXU7k6BB0TR81mcQUfAQVCK74wBoPJLDuiEAWgKnUtp3+DzWeoChWQSaM+N1v+TxTm9xn9hAHS1QwMlpicQhz7p+zIGmOuZ4t0nQN7cENrxqPUvmT6s/EoS7sQYQFPzTErr0iyQSZGdMYDtoNHC6GNa7FIPsJlog+DeR/cMQB5hYu47ZQCqPM4G212vutNgErh3Ic29Fzq8N82nC/+dT5+OzZVzwe/He3SOxqQ7gzrQYDFXMhNHAcxOTarkrS3cJht4dniC+Sy5N9WO7bN7IQNAAL6xaSoC4Q3LDV86181H16YbolukMv+nq4ivgO6KI+5Pt0HSU7Ob25hvDRjWWl+G4w/UW1T5SKD6TrAPDTClNEg1QVVb2wuHftdAF2JEOnIVCangKaXNoSVq93HjzSMzFMqTUl474MiPxiyZAZ6UMEjruCXTuRJkUOcUEyU/wLQ8fuR4wS4HzbmDqov5uqiUljuWymtdFntNX2i5a2gJucGoM5E8wcT637gXUKuM6fZjzoY4ZNb/R4hDFjIAdpUxNGPi0dca8hnWdJtBHJ4lA/CRcVK3FekdHbHoAUTCrOBiOTJoVMkAfeFe/BgqMKmhrzERX6MDJANILYYjdgoeVDU3J0LSFRxPCidizwDWtFIIsgtXS7CBb82SL+B47uBE8GkwoeuL8GBMw0pO4RBsfTTOjOTsXtSkB2BP+8PibiDeFrkfyzlBJ8F4hDYldz7IqUDMyZCpCnlbsOdw2eQslLbumnUIOkI2fAwwLVfQtPOLpUsD4hNdzbZzAYeF+g71SPVzL62Ar88tnBBugISuBf7QQiZjMqkZEGnawzyZteiRPLwf0BLS+wAnghvAtJRdCemDwkJVu0Fm2rNbaS3IHzuNZXAivD0AobXAgyC3ouuSOSZSDzjKGTIOEKJq7FI1QTLARjjlMYXDimGrFsB6COXlsucQjxFEZGsAtdvgLLiQ59vazOGWcgNEcYep9aO51ojdA8x7Ki5h6QhcZkUVnl2jgt0ncCRqt6efQURsAzh7gMXM8Z/D1/Stl8Xkj4xgN+ZkgSz8dUugxkPMDk7QcVDV8dQ8ILMSnJyFlY6VeqrhCOUsvQw8V3KuEOeSvqeq4ySXLB5fg0w68kYtiYccbh1pKfgPSWMlLqDd1LhxnWalMcw3Poh1+gvT3RQfRSE/nwAAAABJRU5ErkJggg==" alt="The Met logo">
+              </picture>
+            </a>
+            <div class="top-bar__icons">
+              <div class="call">
+                <a href="#top" class="icon icon--phone"></a>
+                <div class="for-hover">
+                  <span class="text">THE MET FIFTH AVENUE</span>
+                  <a
+                    href="tel:+12125357710"
+                    class="phone-number"
+                  >
+                    +1 212-535-7710
+                  </a>
+                  <span class="text">THE MET CLOISTERS</span>
+                  <a
+                    href="tel:+12129233700"
+                    class="phone-number"
+                  >
+                    +1 212-923-3700
+                  </a>
+                </div>
+              </div>
+              <a href="#menu" class="icon icon--menu"></a>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <h1 class="header__title">Welcome
+              <br>to The MET
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside class="page__menu menu" id="menu">
+
+      <div class="container container--wide">
+        <div class="menu__content">
+          <div class="top-bar menu__top">
+            <a href="#top" class="top-bar__logo">
+              <picture>
+                <!-- для планшета і більше -->
+                <source media="(min-width: 576px)" srcset="data:image/png;base64,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">
+                <!-- для мобільних -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAuCAYAAACYlx/0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARqSURBVHgB7ZrhddowEICPvP4PmaDOBKET1COQCUImCJ0AmIBkAsgESSbAmSB0AjsTmE6g6uITiOMk2Uakec/93hPG0uksnWTpJKsHhFIq15e1Dr+hHec69HVIdJjpMKB7iY0Oz71er7AjdRlSfUnBzUc++j/06HdxpcOrfu79QYrakeuwYqFU+5SCTG7yk75Ehzd1yNRXQsqX18mn4+4FuZLy8+B/PiUOHWkr9pCFQ25sDED3I6GAAwjgyNcX5PqC3MihM6F6TO34M+v/UneNZzgC6lovAbES2une1Inz5C/05Rqq12iLbYBXiEMGXxQyWGHH2QY4qvUtMvjC8F5+ZiXU7k6BB0TR81mcQUfAQVCK74wBoPJLDuiEAWgKnUtp3+DzWeoChWQSaM+N1v+TxTm9xn9hAHS1QwMlpicQhz7p+zIGmOuZ4t0nQN7cENrxqPUvmT6s/EoS7sQYQFPzTErr0iyQSZGdMYDtoNHC6GNa7FIPsJlog+DeR/cMQB5hYu47ZQCqPM4G212vutNgErh3Ic29Fzq8N82nC/+dT5+OzZVzwe/He3SOxqQ7gzrQYDFXMhNHAcxOTarkrS3cJht4dniC+Sy5N9WO7bN7IQNAAL6xaSoC4Q3LDV86181H16YbolukMv+nq4ivgO6KI+5Pt0HSU7Ob25hvDRjWWl+G4w/UW1T5SKD6TrAPDTClNEg1QVVb2wuHftdAF2JEOnIVCangKaXNoSVq93HjzSMzFMqTUl474MiPxiyZAZ6UMEjruCXTuRJkUOcUEyU/wLQ8fuR4wS4HzbmDqov5uqiUljuWymtdFntNX2i5a2gJucGoM5E8wcT637gXUKuM6fZjzoY4ZNb/R4hDFjIAdpUxNGPi0dca8hnWdJtBHJ4lA/CRcVK3FekdHbHoAUTCrOBiOTJoVMkAfeFe/BgqMKmhrzERX6MDJANILYYjdgoeVDU3J0LSFRxPCidizwDWtFIIsgtXS7CBb82SL+B47uBE8GkwoeuL8GBMw0pO4RBsfTTOjOTsXtSkB2BP+8PibiDeFrkfyzlBJ8F4hDYldz7IqUDMyZCpCnlbsOdw2eQslLbumnUIOkI2fAwwLVfQtPOLpUsD4hNdzbZzAYeF+g71SPVzL62Ar88tnBBugISuBf7QQiZjMqkZEGnawzyZteiRPLwf0BLS+wAnghvAtJRdCemDwkJVu0Fm2rNbaS3IHzuNZXAivD0AobXAgyC3ouuSOSZSDzjKGTIOEKJq7FI1QTLARjjlMYXDimGrFsB6COXlsucQjxFEZGsAtdvgLLiQ59vazOGWcgNEcYep9aO51ojdA8x7Ki5h6QhcZkUVnl2jgt0ncCRqt6efQURsAzh7gMXM8Z/D1/Stl8Xkj4xgN+ZkgSz8dUugxkPMDk7QcVDV8dQ8ILMSnJyFlY6VeqrhCOUsvQw8V3KuEOeSvqeq4ySXLB5fg0w68kYtiYccbh1pKfgPSWMlLqDd1LhxnWalMcw3Poh1+gvT3RQfRSE/nwAAAABJRU5ErkJggg==" alt="The Met logo">
+              </picture>
+            </a>
+            <div class="header__icons">
+              <a href="#top" class="icon icon--close"></a>
+            </div>
+          </div>
+          <div class="menu__bottom">
+            <nav class="nav menu__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#top">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#about-us">About us</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#now-on-view">Now On View</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#explore-online">Explore online</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#contacts">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="menu__phone-number" href="tel:12125357710">The Met Fifth Avenue<br>+1 212-535-7710</a>
+            <a class="menu__phone-number" href="tel:12125357710">The Met Cloisters<br>+1 212-923-3700</a>
+            <a class="menu__call-to-order">Call to Order</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <section class="about-us" id="about-us">
+            <div class="about-us__title">
+              <p class="section-title
+                        section-title--allign--left
+                        section-title--red--text--h4"
+                        >
+                        Plan your visit
+              </p>
+              <h2 class="
+                        section-title
+                        section-title--allign--left
+                        section-title--museum-hours">Museum hours</h2>
+            </div>
+
+            <div class="about-us__content">
+              <h3 class="about-us__subtitle">The Met Fifth Avenue</h3>
+              <div class="about-us__week">
+                <ul class="about-us__week--time">
+                  <li class="about-us__week--time">10 AM - 5 PM</li>
+                  <li class="about-us__week--time">10 AM - 9 PM</li>
+                  <li class="about-us__week--time">Closed</li>
+                </ul>
+
+                <ul class="about-us__week--days">
+                  <li>Sun, Mon, Tue, Thu</li>
+                  <li>Fri, Sat</li>
+                  <li>Wen</li>
+                </ul>
+              </div>
+
+              <div class="about-us__closed--on">
+                <ul class="about-us__week--time">
+                  <li>Closed on</li>
+                </ul>
+                <ul class="about-us__week--days">
+                  <li>
+                    Thanksgiving Day, Dec 25, Jan 1, First Monday in May
+                  </li>
+                </ul>
+              </div>
+
+              <h3 class="about-us__subtitle">The Met Cloisters</h3>
+
+              <div class="about-us__week">
+                <ul class="about-us__week--time">
+                  <li>10 AM - 4.30 PM</li>
+                  <li>Closed</li>
+                </ul>
+
+                <ul class="about-us__week--days">
+                  <li>Thu -Tue</li>
+                  <li>Wen</li>
+                </ul>
+              </div>
+
+              <div class="about-us__closed--on">
+                <ul class="about-us__week--time">
+                  <li>Closed on</li>
+                </ul>
+                <ul class="about-us__week--days">
+                  <li>
+                    Thanksgiving Day, Dec 25, Jan 1
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="now-on-views" id="now-on-views">
+            <h2 class="section-title now-on-views__title section-title--2">Now On Views</h2>
+            <h3 class="now-on-views now-on-views--info">Explore exhibition gallery guides, videos, articles, and more.</h3>
+
+            <div class="now-on-views__wrapper">
+
+              <article class="now-on-view">
+                <div class="now-on-view__photos">
+
+                  <a href="#top" class="now-on-view__link now-on-view__link--wide">
+                    <img
+                    class="now-on-view__photo "
+                    src="/layout_landing-page/assets/1_1_wide-BODRXMmp.png" alt="1_wide">
+                  </a>
+
+                  <a href="#top" class="now-on-view__link now-on-view__link--square">
+                    <img
+                    class="now-on-view__photo"
+                    src="/layout_landing-page/assets/1_2_square-BnsJqHkw.png" alt="1_square">
+                  </a>
+
+                </div>
+
+                <div>
+                  <h4 class=
+                  "now-on-view__title
+                   now-on-view__title--red--text--h4">
+                   A New Look at Old Masters
+                  </h4>
+                  <h4 class=
+                  "now-on-view__title">
+                   December 12, 2020 - Through Spring 2023
+                  </h4>
+                </div>
+
+              </article>
+
+              <article class="now-on-view">
+
+                <div class="now-on-view__photos now-on-view__photos--triple">
+
+                  <a href="#top" class="now-on-view__link now-on-view__link--square">
+                    <img
+                    class="now-on-view__photo now-on-view__photo--mini"
+                    src="/layout_landing-page/assets/2_1_square-BWQaK7uD.png" alt="1_square">
+                  </a>
+
+                  <a href="#top" class="now-on-view__link now-on-view__link--square">
+                    <img
+                    class="now-on-view__photo now-on-view__photo--mini"
+                    src="/layout_landing-page/assets/2_2_square-B4sUKT5N.png" alt="1_square">
+                  </a>
+
+                  <a href="#top" class="now-on-view__link now-on-view__link--square">
+                    <img
+                    class="now-on-view__photo now-on-view__photo--mini"
+                    src="/layout_landing-page/assets/2_3_square-Bq_Yqs07.png" alt="1_square">
+                  </a>
+
+                </div>
+
+                <div>
+                  <h4 class=
+                    "now-on-view__title
+                     now-on-view__title--red--text--h4">
+                     Bodhisattvas of Wisdom, Compassion, and Power
+                  </h4>
+                  <h4 class=
+                    "now-on-view__title">
+                     March 27, 2021 - October 30, 2022
+                  </h4>
+                </div>
+
+              </article>
+
+              <article class="now-on-view">
+
+                <div class="now-on-view__photos">
+
+                  <a href="#top" class="now-on-view__link now-on-view__link--square">
+                    <img
+                    class="now-on-view__photo"
+                    src="/layout_landing-page/assets/3_1_square-CsjOzxKO.png" alt="1_square">
+                  </a>
+
+                  <a href="#top" class="now-on-view__link now-on-view__link--wide">
+                    <img
+                    class="now-on-view__photo"
+                    src="/layout_landing-page/assets/3_2_wide-C50D4eAU.png" alt="1_wide">
+                  </a>
+                </div>
+
+                <div>
+                  <h4 class=
+                    "now-on-view__title
+                     now-on-view__title--red--text--h4">
+                     Inspiring Walt Disney: The Animation of French Decorative Arts
+                  </h4>
+                  <h4 class=
+                    "now-on-view__title">
+                     December 10, 2021 - March 6, 2022
+                  </h4>
+                </div>
+
+              </article>
+
+              <div class="now-on-views__button">
+                <a href="#top" class="now-on-views__subtitle now-on-views__button--title">View all exhibitions</a>
+              </div>
+
+            </div>
+          </section>
+          <section class="explore-online" id="explore-online">
+            <h2 class="section-title explore-online__title section-title--3">More to Explore Online</h2>
+            <div class="explore-online__events">
+              <article class="event explore-online__event" >
+                <a href="#top">
+                  <img src="/layout_landing-page/assets/Collection_areas-D0Lwjlh_.png" alt="Collection_areas"
+                              class="event__photo">
+                </a>
+                <h3 class="event__title">Collection Areas</h3>
+                <p class="event__text">These collection areas study, exhibit, and care for the objects in The Met collection.</p>
+              </article>
+              <article class="event explore-online__event" >
+                <a href="#top">
+                  <img src="/layout_landing-page/assets/Travel-Ch1ClR3o.png" alt="Collection_areas"
+                              class="event__photo">
+                </a>
+                <h3 class="event__title">Travel</h3>
+                <p class="event__text">Travel with The Met connects the Museum's wide and diverse audience to art, inspiration, and historical perspective.</p>
+              </article>
+              <article class="event explore-online__event" >
+                <a href="#top">
+                  <img src="/layout_landing-page/assets/Virtual_group_tours-m0tV2J1F.png" alt="Collection_areas"
+                              class="event__photo">
+                </a>
+                <h3 class="event__title">Virtual group tours</h3>
+                <p class="event__text">Request a guided tour, reserve admission and lead your own small group, or request a live virtual tour led by a Museum guide.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="contacts" id="contacts">
+            <h2 class="section-title section-title--4">Contact us</h2>
+
+            <div class="contacts__container">
+              <div class="contacts__block">
+                <h5 class="contacts__block-contact-title">
+                  The Met Fifth Avenue
+                </h5>
+                <p class="contacts__block-ph-a">Phone</p>
+                <p class="contacts__block-phone">
+                  <a
+                    href="tel:+12125357710"
+                    class="contacts__block-link"
+                  >
+                    +1 212-535-7710
+                  </a>
+                </p>
+                <p class="contacts__block-ph-a">Address</p>
+                <p>
+                  <a
+                    href="https://www.google.com/maps/place/1000+5th+Ave,+New+York,+NY+10028"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contacts__block-link"
+                  >
+                    1000 Fifth Avenue
+                    <br />
+                    New York, NY 10028
+                  </a>
+                </p>
+              </div>
+              <div class="contacts__block">
+                <h5 class="contacts__block-contact-title">The Met Cloisters</h5>
+                <p class="contacts__block-ph-a">Phone</p>
+                <p>
+                  <a
+                    href="tel:+12129233700"
+                    class="contacts__block-link"
+                  >
+                    +1 212-923-3700
+                  </a>
+                </p>
+                <p class="contacts__block-ph-a">Address</p>
+                <p>
+                  <a
+                    href="https://www.google.com/maps/place/99+Margaret+Corbin+Dr,+New+York,+NY+10040"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contacts__block-link"
+                  >
+                    99 Margaret Corbin Drive
+                    <br />
+                    Fort Tryon Park
+                    <br />
+                    New York, NY 10040
+                  </a>
+                </p>
+              </div>
+
+              <form class="contacts__form" onsubmit="this.reset(); return false;"> <!-- спосіб зробити форму "заглушкою" під час верстки. Він дозволяє імітувати роботу форми без реального відправлення даних на сервер -->
+                <input
+                  class="contacts__form--input contacts__form--text"
+                  type="text"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  class="contacts__form--input contacts__form--text"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+                <textarea
+                  id="message"
+                  name="message"
+                  class="contacts__form--message contacts__form--text-1"
+                  placeholder="Message"
+                  rows="6"
+                  required
+                ></textarea>
+
+                <button
+                  type="submit"
+                  class="contacts__button"
+                >
+                  <span class="contacts__button--title">Send</span>
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <section>
+        <article class="picture">
+          <img
+            src="/layout_landing-page/assets/image-footer-BLscKDb7.png"
+            alt="image-footer"
+            class="picture__photo"
+          />
+        </article>
+      </section>
+    </footer>
+
+  </body>
+</html>
